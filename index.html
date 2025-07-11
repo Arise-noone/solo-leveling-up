@@ -5,36 +5,54 @@
   <title>Solo Leveling</title>
   <style>
     body {
-      background-color: #000;
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      background: #000; /* nền đen */
+      color: #00f0ff; /* chữ xanh neon */
       height: 100vh;
       margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       font-family: Arial, sans-serif;
+      position: relative;
     }
-    h1 {
+
+    .box {
+      border: 3px solid #00f0ff; /* viền xanh neon */
+      background: #001f2f; /* nền khung xanh đen */
+      padding: 50px 80px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .box h1 {
+      margin: 0;
       font-size: 48px;
-      margin-bottom: 30px;
     }
-    a {
-      display: inline-block;
-      padding: 15px 30px;
-      background: #00bfff;
+
+    .arise-btn {
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+      background: #00f0ff;
       color: #000;
+      padding: 12px 24px;
+      border: none;
       text-decoration: none;
       font-weight: bold;
       border-radius: 5px;
+      transition: background 0.3s;
     }
-    a:hover {
+
+    .arise-btn:hover {
       background: #1e90ff;
     }
   </style>
 </head>
 <body>
-  <h1>Solo Leveling</h1>
-  <a href="quest.html">Arise</a>
+  <div class="box">
+    <h1>Solo Leveling</h1>
+  </div>
+
+  <a class="arise-btn" href="quest.html">Arise</a>
 </body>
 </html>
