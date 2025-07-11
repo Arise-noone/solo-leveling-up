@@ -72,11 +72,11 @@
     let strength = 10;
 
     function gainXP() {
-      xp += 20;
+      xp += 50;
       if (xp >= 100) {
         xp = 0;
         level++;
-        strength += 5;
+        strength += 50;
       }
       document.getElementById('level').innerText = level;
       document.getElementById('xp').innerText = xp;
